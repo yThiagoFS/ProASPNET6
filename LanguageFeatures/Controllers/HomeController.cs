@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Xml.Schema;
 
 namespace LanguageFeatures.Controllers
 {
@@ -103,8 +104,67 @@ namespace LanguageFeatures.Controllers
             #endregion
 
             #region Pattern Matching in switch Statements
+            object[] data = new object[] { 275M, 29.5M, "apple", "orange", 100, 10 };
+            decimal total = 0;
+            for(int i = 0; i < data.Length; i++) 
+            {
+                switch (data[i])
+                {
+                    case decimal decimalValue:
+                        total += decimalValue;
+                        break;
 
+                    case int intValue when intValue > 50:
+                        total += intValue;
+                        break;
+                }
+            }
+            return View("Index", new string[] { $"Total: {total:C2}" });
             #endregion
+        }
+        [HttpGet("/method")]
+        public ViewResult ExtensionMethod()
+        {
+            /* ------------- Método sem INTERFACE
+            ShoppingCart cart
+                = new ShoppingCart { Products = Product.GetProducts() };
+            decimal cartTotal = cart.TotalPrices();
+            return View("ExtensionMethod", new string[] { $"Total: {cartTotal:C2}" });
+            */
+
+
+            // Utilizando a interface
+            ShoppingCart cart
+                = new ShoppingCart { Products = Product.GetProducts() };
+            Product[] productArray =
+            {
+                new Product { Name = "kayak", Price = 275M },
+                new Product { Name = "jacket", Price = 48.95M }
+            };
+            decimal cartTotal = cart.TotalPrices();
+            decimal arrayTotal = productArray.TotalPrices();
+
+            return View("ExtensionMethod", new string[]
+            {
+                $"Cart Total: {cartTotal:C2}",
+                $"Array Total: {arrayTotal:C2}"
+            });
+        }
+
+        [HttpGet("/filter-method")]
+        public ViewResult ExtensionMethodFilter()
+        {
+
+            Product[] productArray =
+            {
+                new Product { Name = "kayak", Price = 275M },
+                new Product { Name = "jacket", Price = 49.5M },
+                new Product { Name = "Soccer ball", Price = 19.50M },
+                new Product { Name = "Corner flag", Price = 34.95M }
+            };
+            decimal arrayTotal = productArray.FilterByPrice(20).TotalPrices();
+
+            return View("ExtensionMethod", new string[] { $"Array Total: {arrayTotal:C2}" });
         }
     }
 }

@@ -1,0 +1,10 @@
+﻿@model IEnumerable<string>
+@{
+    Layout = null;
+}
+<div>
+    @foreach(string item in Model)
+    {
+        <b>@item</b> <br/>
+    }
+</div>
