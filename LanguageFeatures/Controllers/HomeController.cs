@@ -166,5 +166,42 @@ namespace LanguageFeatures.Controllers
 
             return View("ExtensionMethod", new string[] { $"Array Total: {arrayTotal:C2}" });
         }
+        [HttpGet("/filter-lambda")]
+        public ViewResult FilterMethodLambda()
+        {
+            // Preciso utilizar somente caso não utilize a lambda expression
+            //bool FilterByPrice(Product? p)
+            //{
+            //    return (p?.Price ?? 0) >= 30;
+            //}
+
+            Product[] productArray =
+            {
+                new Product { Name = "p1", Price = 275M },
+                new Product { Name = "p2", Price = 48.95M },
+                new Product { Name = "p3", Price = 19.50M },
+                new Product { Name = "p4", Price = 34.95M }
+            };
+
+            // Função que a Lambda Expression substitui
+            //Func<Product?, bool> nameFilter = delegate (Product? prod)
+            //{
+            //    return prod?.Name?[0] == 'S';
+            //};
+
+            decimal priceFilterTotal = productArray
+                .Filter(p => (p?.Price ?? 0) >= 20)
+                .TotalPrices();
+
+            decimal nameFilterTotal = productArray
+                .Filter(p => p?.Name?[0] == 'S')
+                .TotalPrices();
+
+            return View("ExtensionMethod", new string[]
+            {
+                $"Price Total: {priceFilterTotal:C2}",
+                $"Name Total: {nameFilterTotal:C2}"
+            });
+        }
     }
 }

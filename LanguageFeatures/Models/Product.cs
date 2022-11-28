@@ -10,7 +10,7 @@ namespace LanguageFeatures.Models
         // Definindo um valor padrão, para não ser um valor nulo
         public string Name { get; set; } = string.Empty;
         public decimal? Price { get; set; }
-
+        public bool NameBeginWwithS => Name?[0] == 'S';
         public static Product?[] GetProducts()
         {
             Product kayak = new Product { Name = "kayak", Price = 275M };
