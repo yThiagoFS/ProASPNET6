@@ -24,7 +24,7 @@ Activities from the book Pro Asp NET Core 6
     * Using an Index Initializer:  <br/>
      <img alt="Index initializer example." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/IndexInitializer.png?raw=true">;
     
-    * Using Target-Typed New Expressions (the same as the last item, but a little less verbose.) <img alt="Target typed expressions." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/TargetTypedExpressions.png?raw=true">;
+    * Using Target-Typed New Expressions (the same as the last item, but a little less verbose.) <img alt="Target typed expressions." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/TargetTypedExpressions.png?raw=true">;<br/>
     
     * Pattern Matching (Test if an object is of a specific type or has specific characteristics, ex: (when iterating over an object with a simple for loop, 
     i can do: if(data[i] is decimal d) => return of the condition));
@@ -37,15 +37,15 @@ Activities from the book Pro Asp NET Core 6
     
     * Extension Methods (way of adding methods to classes that i cannot modify directly, maybe because they're provided by Microsoft or a thid-party package.
     Extension methods are defined in static classes and are also statics.); 
-    Adding it directly:<img alt="Extension method directly." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodDirectly.png?raw=true">
+    Adding it directly:<img alt="Extension method directly." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodDirectly.png?raw=true"><br/>
       
     * Applying Extension Methods to an Interface (it allows me to call the extension method on all the classes that implement the interface.);
     Here is the interface:<br/>
-      <img alt="Apllying the extension methods to an interface - Interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodInterface.png?raw=true"> 
+      <img alt="Apllying the extension methods to an interface - Interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodInterface.png?raw=true"><br/>
      Updating the Extension Method in the Model's folder:<br/>
-      <img alt="Updating the Extension Method in the Model's folder." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UpdatingExtensionMethod.png?raw=true">
+      <img alt="Updating the Extension Method in the Model's folder." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UpdatingExtensionMethod.png?raw=true"><br/>
      Using the Extension Method with the interface on HomeController:<br/>
-      <img alt="Using the Extension Method with the interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UsingExtensionMethodWInterface.png?raw=true"> 
+      <img alt="Using the Extension Method with the interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UsingExtensionMethodWInterface.png?raw=true"> <br/>
     
     
     
