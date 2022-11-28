@@ -34,4 +34,19 @@ Activities from the book Pro Asp NET Core 6
       case int intValue when intValue > 50; => check if is an int value and is bigger than 50.
     ));
     
+    * Extension Methods (way of adding methods to classes that i connot modify directly, maybe because they're provided by Microsoft or a thid-party package.
+    Extension methods are defined in static classes and are also statics.); 
+    Adding it directly:<img alt="Extension method directly." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodDirectly.png?raw=true">
+      
+    *Applying Extension Methods to an Interface (it allows me to call the extension method on all the classes that implement the interface.);
+    Here is the interface:
+     <img alt="Apllying the extension methods to an interface - Interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodInterface.png?raw=true"> 
+     Updating the Extension Method in the Model's folder:
+     <img alt="Updating the Extension Method in the Model's folder." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UpdatingExtensionMethod.png?raw=true">
+     Using the Extension Method with the interface on HomeController:
+     <img alt="Using the Extension Method with the interface" src="src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UsingExtensionMethodWInterface.png?raw=true""> 
+    
+    
+    
+    
     
