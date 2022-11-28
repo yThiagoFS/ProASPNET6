@@ -34,7 +34,7 @@ Activities from the book Pro Asp NET Core 6
       case int intValue when intValue > 50; => check if is an int value and is bigger than 50.
     ));
     
-    * Extension Methods (way of adding methods to classes that i connot modify directly, maybe because they're provided by Microsoft or a thid-party package.
+    * Extension Methods (way of adding methods to classes that i cannot modify directly, maybe because they're provided by Microsoft or a thid-party package.
     Extension methods are defined in static classes and are also statics.); 
     Adding it directly:<img alt="Extension method directly." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodDirectly.png?raw=true">
       
