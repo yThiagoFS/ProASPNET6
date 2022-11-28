@@ -21,7 +21,8 @@ Activities from the book Pro Asp NET Core 6
     * Using Object and Collection Initializers (a syntax sugar that allows the creation of a collection and its contents to be specified in a single step. 
     (return new string[] { "Name1", "Name2", "Name3"});
     
-    * Using an Index Initializer <img alt="Index initializer example." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/IndexInitializer.png?raw=true">;
+    * Using an Index Initializer:  <br/>
+     <img alt="Index initializer example." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/IndexInitializer.png?raw=true">;
     
     * Using Target-Typed New Expressions (the same as the last item, but a little less verbose.) <img alt="Target typed expressions." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/TargetTypedExpressions.png?raw=true">;
     
