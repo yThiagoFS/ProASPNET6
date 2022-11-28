@@ -41,11 +41,11 @@ Activities from the book Pro Asp NET Core 6
       
     * Applying Extension Methods to an Interface (it allows me to call the extension method on all the classes that implement the interface.);
     Here is the interface:<br/>
-     <img alt="Apllying the extension methods to an interface - Interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodInterface.png?raw=true"> 
+      <img alt="Apllying the extension methods to an interface - Interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodInterface.png?raw=true"> 
      Updating the Extension Method in the Model's folder:<br/>
-     <img alt="Updating the Extension Method in the Model's folder." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UpdatingExtensionMethod.png?raw=true">
+      <img alt="Updating the Extension Method in the Model's folder." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UpdatingExtensionMethod.png?raw=true">
      Using the Extension Method with the interface on HomeController:<br/>
-     <img alt="Using the Extension Method with the interface" src="src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UsingExtensionMethodWInterface.png?raw=true""> 
+      <img alt="Using the Extension Method with the interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UsingExtensionMethodWInterface.png?raw=true"> 
     
     
     
