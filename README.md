@@ -39,12 +39,12 @@ Activities from the book Pro Asp NET Core 6
     Extension methods are defined in static classes and are also statics.); 
     Adding it directly:<img alt="Extension method directly." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodDirectly.png?raw=true">
       
-    *Applying Extension Methods to an Interface (it allows me to call the extension method on all the classes that implement the interface.);
-    Here is the interface: <br/>
+    * Applying Extension Methods to an Interface (it allows me to call the extension method on all the classes that implement the interface.);
+    Here is the interface:<br/>
      <img alt="Apllying the extension methods to an interface - Interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodInterface.png?raw=true"> 
-     Updating the Extension Method in the Model's folder:  <br/>
+     Updating the Extension Method in the Model's folder:<br/>
      <img alt="Updating the Extension Method in the Model's folder." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UpdatingExtensionMethod.png?raw=true">
-     Using the Extension Method with the interface on HomeController:  <br/>
+     Using the Extension Method with the interface on HomeController:<br/>
      <img alt="Using the Extension Method with the interface" src="src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UsingExtensionMethodWInterface.png?raw=true""> 
     
     
