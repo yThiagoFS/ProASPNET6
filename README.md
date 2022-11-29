@@ -37,7 +37,7 @@ Activities from the book Pro Asp NET Core 6
     
     * Extension Methods (way of adding methods to classes that i cannot modify directly, maybe because they're provided by Microsoft or a thid-party package.
     Extension methods are defined in static classes and are also statics.); 
-    Adding it directly:<img alt="Extension method directly." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodDirectly.png?raw=true"><br/>
+    Adding it directly:<br/><img alt="Extension method directly." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/ExtensionMethodDirectly.png?raw=true"><br/>
       
     * Applying Extension Methods to an Interface (it allows me to call the extension method on all the classes that implement the interface.);
     Here is the interface:<br/>
