@@ -56,7 +56,7 @@ Activities from the book Pro Asp NET Core 6
     <img alt="Using the method Filter by name." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/FilterWithoutLambda2.png?raw=true"/> <br/>
     Using the method with lambda expression: <br/>
     <img alt="Using the method Filter by name with lambda expression." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/FilterWithLambda.png?raw=true"/> <br/>
-    
+    (I don't need to create the functions that return a bool value, like the FilterByPrice or nameFIlter, i can just use the lambda expressions to simplify it.);
     
     
     
