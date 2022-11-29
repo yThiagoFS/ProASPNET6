@@ -48,6 +48,16 @@ Activities from the book Pro Asp NET Core 6
       <img alt="Using the Extension Method with the interface" src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/UsingExtensionMethodWInterface.png?raw=true"> <br/>
     
     
+    * Using Lambda Expressions () <br/>
+    Creating a FilterByName Method: <br/>
+    <img alt="Filter by name method." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/FilterByNameMethod.png?raw=true"/> <br/>
+    Using the method without lambda expression: <br/>
+    <img alt="Using the method Filter by name." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/FilterWithoutLambda1.png?raw=true"/> <br/>
+    <img alt="Using the method Filter by name." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/FilterWithoutLambda2.png?raw=true"/> <br/>
+    Using the method with lambda expression: <br/>
+    <img alt="Using the method Filter by name with lambda expression." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/FilterWithLambda.png?raw=true"/> <br/>
+    
+    
     
     
     
