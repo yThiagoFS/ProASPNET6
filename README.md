@@ -61,6 +61,12 @@ Activities from the book Pro Asp NET Core 6
     * Using anonymous type (create a model object without having to define a class or struct, but it doesnt mean that the object is dynamic, just that the type definition will be created automatically by the compiler. I have to use var keyword to define an anonymous type.);
     
     * Using default implementations in Interfaces (i can define default implementations for properties and methods defined by interfaces, so i can update interfaces without breaking the existing implementations of them);
+
+    * Using asynchronous methods (perform work in the background, allowing your code to take care of other business. It can be used to improve the overall performance of an application by allowing the server more flexibility in the way that requests are scheduled and executed.
+The work that will be done asynchronously is represented as a Task.
+The way to specify what do you want to happen when the task is complete, is to use the the "continuation", but the async/await keywords are more used.);
+
+    * 
     
    
     
