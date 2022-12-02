@@ -1,4 +1,5 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using LanguageFeatures.Models.Interfaces;
+using System.Reflection.Metadata.Ecma335;
 using System.Xml.Schema;
 
 namespace LanguageFeatures.Controllers
@@ -37,7 +38,6 @@ namespace LanguageFeatures.Controllers
             //});
             #endregion
 
-
             #region Object and collection initializer
             /* Object initializer:
 
@@ -61,13 +61,11 @@ namespace LanguageFeatures.Controllers
              */
             #endregion
 
-
-
             #region Index initializer (dicionario)
             //Dictionary<string, Product> productsDictionary = new Dictionary<string, Product>
             //{
-            //    ["Kayak"] = new Product { Name ="Kayak", Price = 275M },
-            //    ["Lifejacket"] = new Product { Name="Lifejacket", Price = 48.95M } 
+            //    ["Kayak"] = new Product { Name = "Kayak", Price = 275M },
+            //    ["Lifejacket"] = new Product { Name = "Lifejacket", Price = 48.95M }
 
             //};
             //return View("Index", productsDictionary.Keys);
@@ -203,5 +201,29 @@ namespace LanguageFeatures.Controllers
                 $"Name Total: {nameFilterTotal:C2}"
             });
         }
+        [HttpGet("/anonymous-type")]
+        public ViewResult AnonymousType()
+        {
+            var products = new[]
+            {
+                new { Name = "Kayak", Price = 275M },
+                new { Name = "Lifejacket", Price = 48.95M },
+                new { Name =  "Soccer ball", Price = 19.50M },
+                new { Name = "Corner flag", Price = 34.95M }
+            };
+            return View("Index", products.Select(p => p.Name));
+        }
+        [HttpGet("/implementation-interfaces")]
+        public ViewResult ImplementationInterfaces()
+        {
+            IShoppingCartWithImplementation cart = new ShoppingCartWithImplementation(
+                new Product { Name = "Kayak", Price = 275M },
+                new Product { Name = "Lifejacket", Price = 48.95M },
+                new Product { Name = "Soccer ball", Price = 19.50M },
+                new Product { Name = "Corner flag", Price = 34.95M  }
+                );
+            return View("Index", cart.Products?.Select(p => p.Name));
+        }
+
     }
 }
