@@ -58,6 +58,11 @@ Activities from the book Pro Asp NET Core 6
     <img alt="Using the method Filter by name with lambda expression." src="https://github.com/yThiagoFS/ProAspNetImgs/blob/main/FilterWithLambda.png?raw=true"/> <br/>
     (I don't need to create the functions that return a bool value, like the FilterByPrice or nameFIlter, i can just use the lambda expressions to simplify it.);
     
+    * Using anonymous type (create a model object without having to define a class or struct, but it doesnt mean that the object is dynamic, just that the type definition will be created automatically by the compiler. I have to use var keyword to define an anonymous type.);
+    
+    * Using default implementations in Interfaces (i can define default implementations for properties and methods defined by interfaces, so i can update interfaces without breaking the existing implementations of them);
+    
+   
     
     
     
