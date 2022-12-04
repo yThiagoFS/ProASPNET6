@@ -211,7 +211,8 @@ namespace LanguageFeatures.Controllers
                 new { Name =  "Soccer ball", Price = 19.50M },
                 new { Name = "Corner flag", Price = 34.95M }
             };
-            return View("Index", products.Select(p => p.Name));
+            return View("Index",products.Select( p => $"{nameof(p.Name)}: {p.Name}," +
+            $"{nameof(p.Price)}: {p.Price}"));
         }
         [HttpGet("/implementation-interfaces")]
         public ViewResult ImplementationInterfaces()
@@ -222,7 +223,38 @@ namespace LanguageFeatures.Controllers
                 new Product { Name = "Soccer ball", Price = 19.50M },
                 new Product { Name = "Corner flag", Price = 34.95M  }
                 );
-            return View("Index", cart.Products?.Select(p => p.Name));
+            return View("Index", cart.Names);
+        }
+        [HttpGet("/asynchronous-method")]
+        public async Task<ViewResult> AsyncAwait()
+        {
+            long? length = await MyAsyncMethods.GetPageLength();
+            return View("Index",new string[] { $"Length: {length}" });
+        }
+        [HttpGet("/asynchronous-enumerable")]
+        public async Task<ViewResult> AsyncEnumerable()
+        {
+            List<string> output = new List<string>();
+            // not the async method
+            //foreach(long? len in await 
+            //    MyAsyncMethods.GetPageLengths(output,
+            //    "apress.com",
+            //    "microsoft.com",
+            //    "amazon.com"))
+            //{
+            //    output.Add($"Page length: {len}");
+            //}
+
+            // using the async method
+
+            await foreach(long? len in MyAsyncMethods.GetPageLengths(output,
+                "apress.com",
+                "microsoft.com",
+                "amazon.com"))
+            {
+                output.Add($"Page length: {len}");
+            }
+            return View("Index", output);
         }
 
     }
